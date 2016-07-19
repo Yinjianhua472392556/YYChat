@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginController">
+            <connections>
+                <outlet property="userCountTextField" destination="baU-y8-zZ6" id="7Ie-Dx-a6n"/>
+                <outlet property="userPasswordTextField" destination="JMl-aI-eTd" id="2KR-Fb-dvO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="n83-Gk-SUh">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入密码" textAlignment="natural" minimumFontSize="17" background="textfieldBackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="JMl-aI-eTd">
+                    <rect key="frame" x="15" y="305" width="290" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q7y-58-Iwl">
+                    <rect key="frame" x="15" y="370" width="290" height="35"/>
+                    <state key="normal" title="登录" backgroundImage="loginButtonBackgroundImage">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loginAction:" destination="-1" eventType="touchUpInside" id="yKf-pH-wOD"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入账号" textAlignment="natural" minimumFontSize="17" background="textfieldBackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="baU-y8-zZ6">
+                    <rect key="frame" x="15" y="240" width="290" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="gzC-Yo-6HB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="JMl-aI-eTd" firstAttribute="top" secondItem="baU-y8-zZ6" secondAttribute="bottom" constant="30" id="5OZ-lB-cwO"/>
+                <constraint firstAttribute="bottom" secondItem="n83-Gk-SUh" secondAttribute="bottom" id="Azf-ke-uMQ"/>
+                <constraint firstItem="baU-y8-zZ6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="FEY-ZZ-Wjc"/>
+                <constraint firstItem="JMl-aI-eTd" firstAttribute="height" secondItem="baU-y8-zZ6" secondAttribute="height" id="Gj8-9p-rcu"/>
+                <constraint firstItem="JMl-aI-eTd" firstAttribute="trailing" secondItem="baU-y8-zZ6" secondAttribute="trailing" id="Sgo-yg-U8C"/>
+                <constraint firstItem="baU-y8-zZ6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Wcg-Mh-L3i"/>
+                <constraint firstItem="n83-Gk-SUh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WnL-5f-lGT"/>
+                <constraint firstItem="baU-y8-zZ6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="240" id="cDA-hR-uai"/>
+                <constraint firstItem="q7y-58-Iwl" firstAttribute="top" secondItem="JMl-aI-eTd" secondAttribute="bottom" constant="30" id="e05-WK-LQJ"/>
+                <constraint firstItem="q7y-58-Iwl" firstAttribute="leading" secondItem="JMl-aI-eTd" secondAttribute="leading" id="iLA-fg-4Az"/>
+                <constraint firstAttribute="trailing" secondItem="baU-y8-zZ6" secondAttribute="trailing" constant="15" id="k4r-Z4-wcf"/>
+                <constraint firstItem="n83-Gk-SUh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sor-PG-5dp"/>
+                <constraint firstItem="q7y-58-Iwl" firstAttribute="height" secondItem="JMl-aI-eTd" secondAttribute="height" id="tNm-hr-rV4"/>
+                <constraint firstItem="JMl-aI-eTd" firstAttribute="leading" secondItem="baU-y8-zZ6" secondAttribute="leading" id="tPA-Ne-qMA"/>
+                <constraint firstItem="q7y-58-Iwl" firstAttribute="trailing" secondItem="JMl-aI-eTd" secondAttribute="trailing" id="xMy-68-xUy"/>
+                <constraint firstAttribute="trailing" secondItem="n83-Gk-SUh" secondAttribute="trailing" id="zgL-lA-Szd"/>
+            </constraints>
+            <point key="canvasLocation" x="214" y="379"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="loginBackgroundImage" width="320" height="568"/>
+        <image name="loginButtonBackgroundImage" width="260" height="50"/>
+        <image name="textfieldBackgroundImage" width="260" height="50"/>
+    </resources>
+</document>
